@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>All Product - UpModern</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+<body>
+    
+        <div class="container">
+            <div class="navbar">
+            <div class="logo">
+                <img src ="images/Logo_desingn.png" width="125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html" class="b">Home</a></li>
+                    <li><a href="product.html" class="b">Products</a></li>
+                    <li><a href="Contact.html" class="b">Contact</a></li>
+                    <li><a href="account-page.html" class="b">Account</a></li>
+                    <li><a href="AboutUs.html" class="b">About</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart_black.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">      
+            </div>
+        </div>
+
+    <div class="small-container">
+    
+        <div class="row row-2">
+            <h2>All Products </h2>
+            <select>
+                <option>Default Sorting</option>
+                <option>Sort by Price</option>
+                <option>Sort by Popularity</option>
+                <option>Sort by Rating</option>
+                <option>Sort by Sale</option>
+                
+            </select>
+        </div>
+        
+        <div class="row">
+            <div class="col-4">
+                <a href="SRS.html"><img src="product/SRS.png"></a>
+                <a href="SRS.html"><h4>Sony SRS Speaker</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>RM1199.00</p>   
+            </div>
+            <div class="col-4">
+                <a href="XB23.html"><img src="product/XB23.png"></a>
+                <a href="XB23.html"><h4>Sony XB23 Portable Speaker </h4></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>RM359.00</p>   
+            </div>
+             <div class="col-4">
+                <a href="C922.html"><img src="product/C922.png"></a>
+                <a href="C922.html"><h4>C922 Pro HD Webcam</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>RM360.00</p>   
+            </div>
+            <div class="col-4">
+                <a href="kiya.html"><img src="product/kiyo.png"></a>
+                <a href="kiya.html"><h4>Razer Kiyo</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>RM415.00</p>   
+            </div>
+        </div> 
+        <div class="page-btn">
+            <a href="product.html" style="color: #f7931e"><span>1</span></a>
+            <a href="product2.html" style="color: #f7931e"><span>2</span></a>
+            <a style="color: #f7931e"><span>&#8594;</span></a>
+        </div>
+    </div>
+    
+<!----------footer-------------> 
+    
+     <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Dowload Our Apps</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/app-store.png">
+                        <img src="images/play-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/ready.png">
+                    <p>Founded in 2020 in Johor, Malaysia and growing per seconds to be one of the most pioneering e-commerce across Malaysia and Singapore. For each of our products, we focus on how our customers connect and interact with the digital world.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 - Amirul Hakim</p>
+        </div>
+    </div>
+<!-----------js for toggle menu-------------> 
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        
+        MenuItems.style.maxHeight = "0px";
+        
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
+        }
+    </script>
+    
+    
+</body>
+</html>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
