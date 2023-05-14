@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+nav a:hover {
+  border-radius: 10px;
+  color: black;
+}
+
+.jumbotron {
+  background-color: black;
+  padding-top: 9em;
+  min-height: 570px;
+}
+
+#header p {
+  color: #fdfdfd;
+  padding-bottom: 1rem;
+}
+#header h2 {
+  color: gold;
+  font-size: 6vw;
+}
+
+#header2 {
+  padding-top: 1em;
+}
+
+#header2 h2 {
+  color: #fdfdfd;
+  font-size: 4vw;
+}
+#header2 h1 {
+  color: transparent;
+  font-size: 5vw;
+  font-weight: 100;
+  line-height: 1.5;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+
+.message {
+  background-color: gold;
+  color: black;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  position: absolute;
+  padding-left: 0.5rem;
+  top: 0.2rem;
+  left: 0px;
+  animation: openclose 5s ease-in-out infinite;
+}
+
+.word1,
+.word2,
+.word3 {
+  font-family: tahoma;
+}
+
+@keyframes openclose {
+  0% {
+    top: 0.2rem;
+    width: 0;
+  }
+  5% {
+    width: 0;
+  }
+  15% {
+    width: 430px;
+  }
+  30% {
+    top: 0.2rem;
+    width: 430px;
+  }
+  33% {
+    top: 0.2rem;
+    width: 0;
+  }
+  35% {
+    top: 0.2rem;
+    width: 0;
+  }
+  38% {
+    top: -7vw;
+  }
+  48% {
+    top: -7vw;
+    width: 490px;
+  }
+  62% {
+    top: -7vw;
+    width: 490px;
+  }
+  66% {
+    top: -7vw;
+    width: 0;
+    text-indent: 0;
+  }
+  71% {
+    top: -14.5vw;
+    width: 0;
+    text-indent: 5px;
+  }
+  86% {
+    top: -14.5vw;
+    width: 375px;
+  }
+  95% {
+    top: -14.5vw;
+    width: 375px;
+  }
+  98% {
+    top: -14.5vw;
+    width: 0;
+    text-indent: 5px;
+  }
+  100% {
+    top: 0;
+    width: 0;
+    text-indent: 0;
+  }
+}
+
+.btn-ws {
+  background-color: gold;
+  color: black;
+  border-radius: 10px;
+  padding: 0.5em;
+  text-decoration: none;
+}
+
+.responsive-img,
+#masalah img {
+  padding: 2em;
+  width: 100%;
+  height: auto;
+}
+#section1,
+#section2 {
+  padding: 2em 1em;
+}
+
+#section2 img {
+  padding: 0.5em;
+  width: 70%;
+  height: auto;
+}
+
+#faq,
+#masalah {
+  background-color: black;
+  min-height: 550px;
+  padding: 2em 1em;
+}
+
+.persoalanHeader {
+  display: flex;
+}
+
+#faq .container {
+  background-color: #fdfdfd;
+  padding: 2em 3em 2em 3em;
+  border-radius: 15px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: auto;
+  height: 750px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: gold;
+  color: black;
+  border-radius: 15px;
+  padding: 1em;
+}
+
+.flip-card-back {
+  background-color: whitesmoke;
+  color: rgb(13, 13, 13);
+  transform: rotateY(180deg);
+  border-radius: 15px;
+  padding: 1em;
+}
+
+.pic-masalah {
+  display: flex;
+}
+
+.btn-reg {
+  background-color: rgb(255, 215, 0);
+  color: black;
+  border-radius: 10px;
+  padding: 1em;
+  text-decoration: none;
+}
+
+.btn-reg a:hover {
+  background-color: rgb(255, 232, 105);
+}
+
+#section3 {
+  position: relative;
+  overflow: hidden;
+}
+
+#section3 img {
+  padding: 2em;
+  width: 100%;
+  height: auto;
+  max-width: 450px;
+}
+
+#reg-pic {
+  position: absolute;
+  left: 73%;
+}
+#reg-pic2 {
+  position: absolute;
+  left: 53%;
+  z-index: -1;
+}
+
+footer {
+  background-color: black;
+}
+
+footer a {
+  color: #fdfdfd;
+}
+
+footer a:hover {
+  color: gold;
+  background-color: transparent;
+}
